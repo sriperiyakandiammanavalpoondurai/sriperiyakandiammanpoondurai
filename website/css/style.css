@@ -264,13 +264,16 @@ nav a.active{color:#2a0505;background:linear-gradient(180deg,var(--gold-light),v
 .table-shell{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(212,175,55,.5);border-top:5px solid var(--gold);margin-bottom:2rem}
 .table-head{background:linear-gradient(90deg,#2a0505,#7a1010);color:var(--gold-light);padding:1.05rem 1.3rem;font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:.6rem}
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{width:100%;border-collapse:collapse;min-width:560px}
+table{width:100%;border-collapse:collapse;}
 th,td{padding:.95rem 1rem;border-bottom:1px solid #f0e2bd;text-align:left;vertical-align:middle}
 th{background:#fdf3d2;color:var(--maroon-900);font-weight:800;position:sticky;top:0}
 tbody tr{transition:background .2s, transform .2s}
 tbody tr:hover{background:#fff8e1}
 tbody tr:nth-child(even){background:#fffdf3}
+td{font-size:.9rem;line-height:1.4}
 td:first-child{font-weight:800;color:var(--maroon)}
+/* Kovil Veedu section - ensure proper table width on mobile */
+@media(max-width:860px){table{min-width:auto}}
 
 /* ---------- pooja tabs ---------- */
 .pooja-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:1.3rem;align-items:start;margin-bottom:2.2rem}
