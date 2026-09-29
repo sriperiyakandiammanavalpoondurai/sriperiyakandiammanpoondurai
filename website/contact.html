@@ -15,7 +15,9 @@
 <div class="divine-strip"><span><span class="om">ॐ</span> &nbsp;அருள்மிகு ஸ்ரீ பெரியகாண்டியம்மன் அண்ணமார் சாமி திருத்தலம்&nbsp; <span class="om">ॐ</span> &nbsp;அவல்பூந்துறை, ஈரோடு</span></div>
 <header>
   <div class="nav-container">
+    <div class="header-samy header-samy-left"><img src="assets/samy-photo.jpg" alt="ஸ்ரீ பெரியகாண்டியம்மன்" loading="lazy" decoding="async"></div>
     <a class="brand" href="index.html"><span class="brand-medal"><img src="assets/temple-2.jpg" alt="ஸ்ரீ பெரியகாண்டியம்மன் கோவில்" loading="lazy" decoding="async"></span><span class="brand-text"><h1>ஸ்ரீ பெரியகாண்டியம்மன் கோவில்</h1><p>அவல்பூந்துறை, ஈரோடு</p></span></a>
+    <div class="header-samy header-samy-right"><img src="assets/samy-photo.jpg" alt="ஸ்ரீ பெரியகாண்டியம்மன்" loading="lazy" decoding="async"></div>
     <button class="menu-btn" id="menu-btn" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">☰</button>
     <nav><ul id="nav-links">
       <li><a href="index.html" data-page="index">முகப்பு</a></li>
@@ -52,9 +54,61 @@
     <div class="note-bar" style="text-align:center">📞 <strong>மேற்கண்ட அனைத்து சேவைகளுக்கும் முன்பதிவு மற்றும் கூடுதல் விவரங்களுக்கு கோவில் அலுவலகத்தை தொடர்பு கொள்ளவும்.</strong></div>
   </div>
 
+  <div class="enquiry-shell reveal">
+    <div class="title-center" style="margin-bottom:.8rem"><h2>📩 தொடர்பு படிவம்</h2></div>
+    <form class="temple-form" id="temple-form" action="https://api.web3forms.com/submit" method="POST">
+  
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="8798db1b-c5b8-45ac-a134-a2356f5552b2">
+  <input type="hidden" name="subject" value="பெரியகாண்டியம்மன் கோவில் தொடர்பு படிவம்">
+
+  <div class="form-row">
+    <label>
+      <span>முழு பெயர்</span>
+      <input type="text" name="name" placeholder="உங்கள் பெயரை உள்ளிடவும்" required>
+    </label>
+    <label>
+      <span>தொலைபேசி</span>
+      <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+    </label>
+  </div>
+  
+  <div class="form-row">
+    <label>
+      <span>மின்னஞ்சல்</span>
+      <input type="email" name="email" placeholder="you@example.com">
+    </label>
+    <label>
+      <span>சேவை / பூஜை</span>
+      <select name="service">
+        <option value="">தேர்ந்தெடுக்கவும்</option>
+        <option>பூஜைக்கு முன்பதிவு</option>
+        <option>அபிஷேகம்</option>
+        <option>ஜாதகம் பதிவிடுதல்</option>
+        <option>இரதம் ஓட்டம்</option>
+        <option>காது குத்துதல்</option>
+        <option>முதல் முடி எடுத்தல்</option>
+        <option>அன்னதானம்</option>
+      </select>
+    </label>
+  </div>
+  
+  <label class="full-width">
+    <span>செய்தி</span>
+    <textarea name="message" rows="5" placeholder="உங்கள் கோரிக்கையை விவரிக்கவும்..." required></textarea>
+  </label>
+  
+  <div class="form-actions" style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+    <button type="submit" class="btn btn-gold" id="submit-btn">📨 அனுப்பவும்</button>
+    <!-- Status message will appear here -->
+    <span id="form-result" style="font-weight: 600; font-size: 0.95rem;"></span>
+  </div>
+</form> 
+  </div>
+
   <div class="contact-grid" style="margin-top:1.4rem">
     <div class="card-3d reveal" data-tilt><div class="icon-ring">📍</div><h3>முகவரி</h3><p>ஈரோடு - தாராபுரம் சாலை,<br>அவல்பூந்துறை,<br>ஈரோடு - 638115, தமிழ்நாடு.</p></div>
-    <div class="card-3d reveal" data-tilt><div class="icon-ring">📞</div><h3>தொலைபேசி</h3><p style="font-size:1.25rem;font-weight:800">+91 99999 99999</p><p style="color:var(--muted);font-size:.9rem">அழைக்க கிடைக்கும் நேரம்: காலை 8:00 - இரவு 6:00</p></div>
+    <div class="card-3d reveal" data-tilt><div class="icon-ring">📞</div><h3>தொலைபேசி</h3><p style="font-size:1.25rem;font-weight:800">+91 88254 14645</p><p style="color:var(--muted);font-size:.9rem">அழைக்க கிடைக்கும் நேரம்: காலை 8:00 - இரவு 6:00</p></div>
   </div>
 
   <div class="map-shell reveal">
@@ -76,5 +130,48 @@
 </footer>
 <button class="to-top" id="toTop" aria-label="மேலே செல்">↑</button>
 <script src="js/main.js" defer></script>
+
+<script>
+document.getElementById('temple-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // இது பக்கம மாறுவதை 100% தடுக்கும்
+    
+    const form = this;
+    const submitBtn = document.getElementById('submit-btn');
+    const result = document.getElementById('form-result');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'அனுப்புகிறது...';
+    result.style.color = '#555';
+    result.textContent = 'தயவுசெய்து காத்திருக்கவும்...';
+
+    const formData = new FormData(form);
+    
+    // Web3Forms-க்கு நேரடியாக Fetch மூலம் அனுப்புதல்
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+    })
+    .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+            result.style.color = 'green';
+            result.textContent = '✅ சமர்ப்பிக்கப்பட்டது! உங்கள் கோரிக்கை வெற்றிகரமாக அனுப்பப்பட்டது.';
+            form.reset(); // ஃபார்மை காலியாக்குதல்
+        } else {
+            result.style.color = 'red';
+            result.textContent = json.message || 'மன்னிக்கவும், பிழை ஏற்பட்டுள்ளது.';
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        result.style.color = 'red';
+        result.textContent = 'மன்னிக்கவும், இணைப்பில் சிக்கல் உள்ளது.';
+    })
+    .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '📨 அனுப்பவும்';
+    });
+});
+</script>
 </body>
 </html>

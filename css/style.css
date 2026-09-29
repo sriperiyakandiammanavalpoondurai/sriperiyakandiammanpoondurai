@@ -88,6 +88,28 @@ header{
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:10px;min-height:var(--header-h);padding:12px 0 10px;
 }
+.header-samy{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:106px;height:118px;
+  border-radius:48px 48px 14px 14px;padding:3px;
+  background:conic-gradient(from 20deg,#8a6a14,var(--gold),#fff0b3,var(--gold),#8a6a14);
+  box-shadow:var(--shadow-gold), 0 6px 20px rgba(0,0,0,.5);
+  z-index:10;overflow:hidden;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.header-samy:hover{
+  transform:translateY(-50%) scale(1.05);
+  box-shadow:0 0 24px rgba(212,175,55,.75), 0 8px 24px rgba(0,0,0,.6);
+}
+.header-samy img{
+  width:100%;height:100%;
+  object-fit:contain;
+  border-radius:45px 45px 11px 11px;
+  background:#fff;
+  border:1px solid rgba(139,0,0,.2);
+}
+.header-samy-left{left:12px}
+.header-samy-right{right:12px}
 .brand{
   display:flex;align-items:center;justify-content:center;gap:14px;
   text-decoration:none;min-width:0;max-width:100%;
@@ -479,9 +501,15 @@ img.fade.ok{opacity:1}
 /* ---------- responsive ---------- */
 @media(max-width:1240px){
   nav a{font-size:.9rem;padding:.48rem .78rem}
+  .header-samy{width:92px;height:102px;border-radius:40px 40px 12px 12px}
+  .header-samy img{border-radius:37px 37px 10px 10px}
 }
 @media(max-width:1020px){
   :root{--header-h:134px}
+  .header-samy{width:82px;height:92px;border-radius:36px 36px 12px 12px}
+  .header-samy img{border-radius:33px 33px 10px 10px}
+  .header-samy-left{left:4px}
+  .header-samy-right{right:4px}
   nav a{font-size:.88rem;padding:.45rem .7rem}
   .pooja-layout{grid-template-columns:1fr}
   .pooja-tabs{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -491,7 +519,12 @@ img.fade.ok{opacity:1}
 @media(max-width:860px){
   :root{--header-h:88px}
   .nav-container{flex-direction:row;justify-content:center;padding:10px 0}
-  .brand{padding-right:64px}           /* keep name optically centered next to menu button */
+  .header-samy{width:54px;height:60px;top:50%;transform:translateY(-50%);border-radius:24px 24px 8px 8px}
+  .header-samy img{border-radius:21px 21px 6px 6px}
+  .header-samy:hover{transform:translateY(-50%) scale(1.05)}
+  .header-samy-left{left:6px}
+  .header-samy-right{right:64px}
+  .brand{padding-left:62px;padding-right:122px}           /* keep name optically centered between samy photos & menu button */
   .menu-btn{display:inline-flex}
   nav{width:auto}
   nav ul{
@@ -517,7 +550,11 @@ img.fade.ok{opacity:1}
   :root{--header-h:92px}
   body{font-size:15px}
   .divine-strip{font-size:.72rem}
-  .brand{gap:10px;padding-right:58px}
+  .header-samy{width:48px;height:54px;border-radius:20px 20px 6px 6px}
+  .header-samy img{border-radius:17px 17px 5px 5px}
+  .header-samy-left{left:4px}
+  .header-samy-right{right:54px}
+  .brand{gap:8px;padding-left:52px;padding-right:104px}
   .menu-btn{width:48px;height:48px}
   .menu-btn::before{top:16px}
   .brand-text h1{font-size:.9rem;line-height:1.28}
