@@ -363,6 +363,7 @@ td:first-child{font-weight:800;color:var(--maroon)}
 /* ---------- history ---------- */
 .intro-3d{background:linear-gradient(180deg,#fffdf6,#fff3d0);border:1px solid rgba(212,175,55,.6);border-radius:22px;padding:clamp(1.4rem,3.5vw,2.4rem);box-shadow:var(--shadow);font-size:1.08rem;line-height:2;color:#3d2a1e;margin-bottom:2.6rem;position:relative;overflow:hidden}
 .intro-3d::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--maroon),var(--gold),var(--maroon))}
+.intro-3d h3{color:var(--maroon-900);font-size:1.25rem;margin-top:1.6rem;margin-bottom:0.8rem;font-weight:700;border-top:1px dashed rgba(212,175,55,.5);padding-top:1.2rem}
 .intro-3d p{margin-bottom:1rem}
 .intro-3d p:last-child{margin-bottom:0}
 .timeline{position:relative;padding:.6rem 0 1rem}

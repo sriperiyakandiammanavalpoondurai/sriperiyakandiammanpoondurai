@@ -36,7 +36,7 @@
   ];
   var FESTIVAL = [
     {date:"01.02.2026",eventName:"கும்பாபிஷேக ஆண்டு விழா",tamilDate:"தை- 18",weekday:"ஞாயிறு"},
-    {date:"11.10.2026",eventName:"நவராத்திரி பூஜை தொடக்கம்",tamilDate:"புரட்டாசி - 24",weekday:"ஞாயிறு",icon:"🪔"}
+    {date:"11.10.2026",eventName:"நவராத்திரி 11.10.2026 முதல் 19.10.2026 வரை ஒன்பது நாட்கள்",tamilDate:"புரட்டாசி - 24",weekday:"ஞாயிறு",icon:"🪔"}
   ];
   function parseD(s){var p=s.split(".");return new Date(+p[2],+p[1]-1,+p[0]);}
   function upcoming(n){
