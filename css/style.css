@@ -366,6 +366,10 @@ td:first-child{font-weight:800;color:var(--maroon)}
 .intro-3d h3{color:var(--maroon-900);font-size:1.25rem;margin-top:1.6rem;margin-bottom:0.8rem;font-weight:700;border-top:1px dashed rgba(212,175,55,.5);padding-top:1.2rem}
 .intro-3d p{margin-bottom:1rem}
 .intro-3d p:last-child{margin-bottom:0}
+.veerappur-card{background:linear-gradient(135deg,rgba(255,248,225,0.95),rgba(255,243,214,0.95));border:2px solid var(--gold);border-radius:18px;padding:1.4rem 1.6rem;margin-top:1.6rem;box-shadow:0 10px 25px rgba(139,0,0,0.08), inset 0 0 15px rgba(212,175,55,0.18);position:relative}
+.veerappur-card h3{color:var(--maroon-900);font-size:1.35rem;margin-top:0;margin-bottom:.8rem;font-weight:800;border-top:none;padding-top:0;display:flex;align-items:center;gap:10px}
+.veerappur-card p{color:#3d2a1e;line-height:1.9;margin-bottom:.8rem}
+.veerappur-card p:last-child{margin-bottom:0}
 .timeline{position:relative;padding:.6rem 0 1rem}
 .timeline::before{content:"";position:absolute;left:22px;top:0;bottom:0;width:4px;border-radius:4px;background:linear-gradient(180deg,var(--gold-light),var(--gold),var(--maroon))}
 .timeline-item{position:relative;padding-left:66px;margin-bottom:1.6rem}
