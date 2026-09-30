@@ -382,7 +382,7 @@ td:first-child{font-weight:800;color:var(--maroon)}
 .org-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;padding-top:3.2rem;margin-bottom:2rem}
 .org-member{background:#fff;border-radius:20px;text-align:center;padding:0 1rem 1.2rem;box-shadow:var(--shadow);border:1px solid rgba(212,175,55,.5);position:relative;transition:transform .25s, box-shadow .25s}
 .org-member:hover{transform:translateY(-8px);box-shadow:var(--shadow-gold)}
-.org-photo{width:112px;height:112px;border-radius:50%;object-fit:cover;margin:-56px auto .6rem;border:5px solid #fff;box-shadow:0 10px 26px rgba(0,0,0,.25);outline:3px solid var(--gold);background:#f5e9c8}
+.org-photo{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center top;margin:-56px auto .6rem;border:5px solid #fff;box-shadow:0 10px 26px rgba(0,0,0,.25);outline:3px solid var(--gold);background:#f5e9c8}
 .org-member h3{color:var(--maroon-900);font-size:1.12rem;line-height:1.4}
 .org-member p{color:var(--muted);font-size:.94rem}
 .role-pill{display:inline-block;color:#fff;font-weight:800;font-size:.86rem;padding:.32rem 1rem;border-radius:999px;margin-bottom:.5rem}
@@ -402,12 +402,12 @@ td:first-child{font-weight:800;color:var(--maroon)}
 .acct-title h2{background:linear-gradient(90deg,#157d7a,#0b4f4d);box-shadow:0 10px 24px rgba(21,125,122,.35)}
 .auditors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
 .auditor-card{display:flex;gap:.8rem;align-items:center;text-align:left;background:#fff;border-radius:16px;padding:.9rem;box-shadow:var(--shadow-sm);border:1px solid rgba(212,175,55,.5);border-top:4px solid var(--gold)}
-.auditor-card img{width:66px;height:66px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid var(--gold)}
+.auditor-card img{width:66px;height:66px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:3px solid var(--gold)}
 .auditor-card h3{font-size:.98rem;color:var(--maroon-900);line-height:1.35}
 .auditor-card p{font-size:.8rem;color:var(--muted)}
 .accountant{display:flex;justify-content:center}
 .accountant-card{display:flex;gap:1rem;align-items:center;background:#fff;border-radius:18px;padding:1rem 1.4rem 1rem 1rem;box-shadow:var(--shadow);border:1px solid rgba(21,125,122,.35);border-top:4px solid #157d7a;max-width:440px;width:100%}
-.accountant-card img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid #157d7a}
+.accountant-card img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #157d7a}
 
 /* ---------- gallery 3D ---------- */
 .gallery-3d{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;perspective:1200px}
